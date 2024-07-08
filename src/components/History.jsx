@@ -10,14 +10,14 @@ function History({ history, moveTo, currMov }) {
                 type="button"
                 className={
                   index === 0
-                    ? 'btn-reset'
+                    ? 'btn '
                     : `btn-move ${currMov === index ? 'active' : ''}`
                 }
                 onClick={() => {
                   moveTo(index);
                 }}
               >
-                {index === 0 ? 'Start a New Game' : `Go to Move # ${index}`}
+                {index === 0 ? 'Restart' : `Go to Move # ${index}`}
               </button>
             </li>
           ))}

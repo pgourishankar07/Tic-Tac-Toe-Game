@@ -38,7 +38,12 @@ function Board() {
   }
 
   function moveTo(move) {
-    setCurrmov(move);
+    if (move === 0) {
+      setHistory(NEW_GAME);
+      setCurrmov(move);
+    } else {
+      setCurrmov(move);
+    }
   }
 
   function sqRender(i) {
