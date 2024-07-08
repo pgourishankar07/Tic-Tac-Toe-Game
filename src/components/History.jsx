@@ -3,7 +3,7 @@ function History({ history, moveTo, currMov }) {
     <div>
       <h2>Current Game History</h2>
       <div className="history-wrapper">
-        <ul className="history">
+        <ol className="history">
           {history.map((i, index) => (
             <li key={index}>
               <button
@@ -21,7 +21,7 @@ function History({ history, moveTo, currMov }) {
               </button>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     </div>
   );
